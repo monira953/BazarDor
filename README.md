@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
 
-## Getting Started
+# 🛒 বাজার দর (BazarDor)
 
-First, run the development server:
+### প্রয়োজনীয় পণ্যের দাম এক নজরে।
+
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+
+🔗 **[Live Demo](https://bazar-dor-9ej1.vercel.app)**
+
+</div>
+
+---
+
+## 📖 Description
+
+**বাজার দর (BazarDor)** is a Bangla web app that helps people check the daily market prices of everyday essentials such as rice, vegetables, fish, eggs and oil. It shows each product's current price, how much it changed today, and a market-by-market price comparison, so shoppers can see at a glance what is getting cheaper or more expensive.
+
+---
+
+## ✨ Key Features
+
+| # | Feature | Details |
+|---|---|---|
+| 1 | **Live price ticker** | An infinitely scrolling marquee below the navbar showing each product's emoji, price and ▲/▼ change. |
+| 2 | **Price risers and fallers** | The home page highlights the top 6 products whose prices rose and the top 6 whose prices fell, plus a responsive grid of all products. |
+| 3 | **Category pages with smart sorting** | Browse products by category and sort by default, price low to high, or price high to low. Sorting uses numeric values, so Bengali digits sort correctly. |
+| 4 | **Protected product details** | Logged-in users can view minimum, maximum and average prices and a market-wise price breakdown for each product. |
+| 5 | **Secure authentication and profile** | Email/password and Google sign-in with BetterAuth, toast notifications, protected routes, and a profile page where users can update their name. |
+
+---
+
+## 🛠️ Technologies Used
+
+| Purpose | Technology |
+|---|---|
+| Framework | Next.js (App Router) |
+| Language | TypeScript |
+| Styling | Tailwind CSS, DaisyUI |
+| Authentication | BetterAuth |
+| Database | MongoDB Atlas |
+| Notifications | react-hot-toast |
+| Icons | lucide-react |
+| Deployment | Vercel |
+
+---
+
+## 🚀 Getting Started
 
 ```bash
+git clone https://github.com/monira953/BazarDor.git
+cd BazarDor
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Create a `.env.local` file in the project root:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```env
+MONGODB_URI=your_mongodb_connection_string
+BETTER_AUTH_SECRET=your_random_secret
+BETTER_AUTH_URL=http://localhost:3000
+GOOGLE_CLIENT_ID=your_google_client_id
+GOOGLE_CLIENT_SECRET=your_google_client_secret
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Then open [http://localhost:3000](http://localhost:3000).
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📡 Data Source
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Product and price data is fetched from `https://openapi.programming-hero.com/api/bazardor`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+<div align="center">
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Made with 💚 by **Monira Sulltana**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+</div>
